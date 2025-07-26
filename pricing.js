@@ -74,13 +74,11 @@ const pricingData = {
     starter: {
       price: "$ 10.00",
       billing: "Billed monthly",
-      link: "https://example.com/monthly-starter",
       btn: "Free Trial For 7 Days",
     },
     enterprise: {
       price: "$ 20.00",
       billing: "Billed monthly",
-      link: "https://example.com/monthly-enterprise",
       brands: "20 Brands",
       credits: "8,000 credits",
       posts: "100 posts",
@@ -89,20 +87,17 @@ const pricingData = {
     advance: {
       price: "$ 30.00",
       billing: "Billed monthly",
-      link: "https://example.com/monthly-advance",
     },
   },
   yearly: {
     starter: {
       price: "$ 110.00",
       billing: "Billed yearly",
-      link: "https://example.com/yearly-starter",
       btn: "Get Started",
     },
     enterprise: {
       price: "$ 230.00",
       billing: "Billed yearly",
-      link: "https://example.com/yearly-enterprise",
       brands: "11 Brands",
       credits: "5000 credits",
       posts: "25 posts",
@@ -111,20 +106,17 @@ const pricingData = {
     advance: {
       price: "$ 350.00",
       billing: "Billed yearly",
-      link: "https://example.com/yearly-advance",
     },
   },
   lifetime: {
     starter: {
       price: "$ 400.00",
       billing: "Billed once in Lifetime",
-      link: "https://example.com/lifetime-starter",
       btn: "Get Started",
     },
     enterprise: {
       price: "$ 500.00",
       billing: "Billed once in Lifetime",
-      link: "https://example.com/lifetime-enterprise",
       brands: "11  Brands",
       credits: "5000 credits",
       posts: "25 posts",
@@ -133,7 +125,6 @@ const pricingData = {
     advance: {
       price: "$ 700.00",
       billing: "Billed once in Lifetime",
-      link: "https://example.com/lifetime-advance",
     },
   },
 };
@@ -147,12 +138,10 @@ function updatePricing(type) {
 
   document.querySelector('[data-plan="starter"]').innerText = data.starter.price;
   document.querySelector('[data-plan="starter-billing"]').innerText = data.starter.billing;
-  document.querySelector('[data-plan="starter-link"]').href = data.starter.link;
   document.querySelector('[data-plan="starter-btn"]').innerText = data.starter.btn;
 
   document.querySelector('[data-plan="enterprise"]').innerText = data.enterprise.price;
   document.querySelector('[data-plan="enterprise-billing"]').innerText = data.enterprise.billing;
-  document.querySelector('[data-plan="enterprise-link"]').href = data.enterprise.link;
   document.querySelector('[data-plan="brands"]').innerText = data.enterprise.brands;
   document.querySelector('[data-plan="credits"]').innerText = data.enterprise.credits;
   document.querySelector('[data-plan="posts"]').innerText = data.enterprise.posts;
@@ -160,7 +149,6 @@ function updatePricing(type) {
 
   document.querySelector('[data-plan="advance"]').innerText = data.advance.price;
   document.querySelector('[data-plan="advance-billing"]').innerText = data.advance.billing;
-  document.querySelector('[data-plan="advance-link"]').href = data.advance.link;
 }
 
 const buttons = document.querySelectorAll(".nav-link");
